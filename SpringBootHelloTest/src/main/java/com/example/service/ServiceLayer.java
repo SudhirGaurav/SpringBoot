@@ -27,4 +27,8 @@ public class ServiceLayer {
 
 	}
 
+	public void delteUser(int id) {
+		repository.delete(id);
+		
+	}
 }
