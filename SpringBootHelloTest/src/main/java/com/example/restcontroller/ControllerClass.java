@@ -34,4 +34,13 @@ public class ControllerClass {
 	public void delteUser(@RequestParam int id) { //it is just query param
 		service.delteUser(id);
 	}
+	
+	@GetMapping(value="/getUserByName")
+	public User getUserByName(@RequestParam String uName){
+		User user= service.getUserByName(uName);
+		System.out.println("Inside get all user."+user);
+		return user;
+
+	}
+	
 }

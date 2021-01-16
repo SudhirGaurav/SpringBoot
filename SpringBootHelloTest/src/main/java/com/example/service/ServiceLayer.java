@@ -31,4 +31,9 @@ public class ServiceLayer {
 		repository.delete(id);
 		
 	}
+	
+	public User getUserByName(String uName) {
+		User user = repository.getUserByName(uName);
+		return user;
+	}
 }
