@@ -31,8 +31,9 @@ public class ControllerClass {
 	}
 	
 	@GetMapping(value="/deleteUser")
-	public void delteUser(@RequestParam int id) { //it is just query param
+	public String delteUser(@RequestParam int id) { //it is just query param
 		service.delteUser(id);
+		return "User with id -- > : "+id+" is deleted Successfully from the database";
 	}
 	
 	@GetMapping(value="/getUserByName")

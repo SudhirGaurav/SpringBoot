@@ -16,4 +16,10 @@ public class SpringBootDriverApp {
 
 //SpringBoot+JPA+SpringMVC
 // For Referring video : https://www.youtube.com/playlist?list=PLdJYl6XU45uLIHaPBQEj-cEMynAl0oeiz
-//
+
+/*
+Rest call API,
+1.http://localhost:8080/getUserByName?uName=sudhir
+2.http://localhost:8080/getAllUser
+3.http://localhost:8080/getAllUser?id=<Profide user id>
+ */
