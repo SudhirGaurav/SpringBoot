@@ -14,4 +14,8 @@ public interface BankRepository extends CrudRepository<User, Integer> {
 	public User getUserByName(@Param("uName") String uName);
 	//why used nativeQuery? got to the link --> https://stackoverflow.com/questions/42145271/noviablealtexception-while-using-spring-data-query-with-hibernate
 
+	public User getUser13213131ByphNumber(String phoneNumber);// NOte- After By must use same name which is in User entity class
+	
+	@Query(  nativeQuery=true, value= "SELECT * FROM User u where u.user_name = :userName and u.password = :password" ) 
+	public User loginUser(@Param("userName") String userName, @Param("password") String password);
 }

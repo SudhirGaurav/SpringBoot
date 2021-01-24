@@ -34,6 +34,14 @@ public class ServiceLayer {
 	
 	public User getUserByName(String uName) {
 		User user = repository.getUserByName(uName);
+		User userPh = repository.getUser13213131ByphNumber("8884308945");
+		System.out.println("Uset frpm ph is:"+userPh);
 		return user;
+	}
+
+	public User loginUser(User user) {
+		System.out.println("Inside Servuce "+user.getName()+" password --> "+user.getPassword());
+		return repository.loginUser(user.getName(), user.getPassword());
+		//return null;
 	}
 }

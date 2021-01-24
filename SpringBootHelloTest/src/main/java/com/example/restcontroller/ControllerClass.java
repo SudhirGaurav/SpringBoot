@@ -3,7 +3,10 @@ package com.example.restcontroller;
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.model.User;
 import com.example.service.ServiceLayer;
 
+@CrossOrigin("*")
 @RestController
 public class ControllerClass {
 
@@ -42,6 +46,18 @@ public class ControllerClass {
 		System.out.println("Inside get all user."+user);
 		return user;
 
+	}
+	
+	
+	@PostMapping(value="/loginUser")
+	public User loginUser(@RequestBody User user) throws Exception {
+		System.out.println("Inside Login "+user);
+		User retUser= service.loginUser(user);
+		System.out.println("After Login user is : "+retUser);
+		if(retUser ==null) {
+			throw new Exception();
+		}
+		return retUser;
 	}
 	
 }

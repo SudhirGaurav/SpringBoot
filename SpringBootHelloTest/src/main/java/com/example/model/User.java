@@ -22,6 +22,9 @@ public class User {
 	@Column(name="user_name")
 	private String name;
 	
+	@Column(name="password")
+	private String password;
+	
 	@Column(name="userType")
 	private String userType;
 
@@ -55,6 +58,15 @@ public class User {
 
 	public void setUserType(String userType) {
 		this.userType = userType;
+	}
+	
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	@Override
