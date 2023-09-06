@@ -1,0 +1,23 @@
+Assets  |   | Liabilities  |   | 
+  |   |   |   | 
+Cash assets:  |   | Current liabilities:  |   | 
+Petty cash:  |   | Accounts payable:  |   | 
+Accounts receivable:  |   | Notes payable:  |   | 
+Inventory value:  |   | Long-term liabilities:  |   | 
+Investments:  |   | Taxes (state):  |   | 
+Prepaid expenses:  |   | Taxes (federal):  |   | 
+Land:  |   | Taxes (property):  |   | 
+Land improvements:  |   | Taxes (misc.):  |   | 
+Buildings:  |   | Payroll/wages:  |   | 
+Vehicles:  |   | Misc:  |   | 
+Equipment:  |   |   |   | 
+Furnishings:  |   |   |   | 
+Miscellaneous assets:  |   |   |   | 
+Intangible assets:  |   |   |   | 
+  |   |   |   | 
+ |  |  |  | 
+  |   |   |   | 
+  |   |   |   | 
+ |   |  |   | 
+  |   |   |   | 
+Total assets: |   | Total liabilities: |   | 
