@@ -15,7 +15,9 @@ import com.spire.pdf.utilities.PdfTableExtractor;
 public class PDFReaderController {
 	public static void pdfReader() {
 		// Load a sample PDF document
-		PdfDocument pdf = new PdfDocument("C:\\Users\\Admin\\git\\SpringBoot\\pdfreader\\src\\main\\java\\Balance_Sheet_Blank-1.pdf");
+		//PdfDocument pdf = new PdfDocument("C:\\Users\\Admin\\git\\SpringBoot\\pdfreader\\src\\main\\java\\Balance_Sheet_Blank-1.pdf");
+		PdfDocument pdf = new PdfDocument("C:\\Users\\Admin\\Downloads\\1015472-20140630.pdf");
+
 
 		System.out.println("PDF reader is : " + pdf);
 		// Create a StringBuilder instance
@@ -69,7 +71,8 @@ public class PDFReaderController {
 		try {
 			// Create PdfReader instance.
 			//PdfReader pdfReader = new PdfReader("C:\\Users\\Admin\\git\\SpringBoot\\pdfreader\\src\\main\\java\\Balance_Sheet_Blank-1.pdf");
-			PdfReader pdfReader = new PdfReader("C:\\Users\\Admin\\Downloads\\Balance-Sheet-Example.pdf");
+			//PdfReader pdfReader = new PdfReader("C:\\Users\\Admin\\Downloads\\Balance-Sheet-Example.pdf");
+			PdfReader pdfReader = new PdfReader("C:\\Users\\Admin\\Downloads\\1015472-20140630.pdf");
 
 			
 			// Get the number of pages in pdf.

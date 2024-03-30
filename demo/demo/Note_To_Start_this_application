@@ -1,0 +1,5 @@
+
+#.When u run this application , y default login page will open , which comes from spring-boot starter sequrity 
+https://stackoverflow.com/questions/71114673/random-login-field-in-localhost8080
+Use user as "user" 
+Password will ping once u star the tomcat
