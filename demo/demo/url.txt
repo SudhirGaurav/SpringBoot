@@ -1,0 +1,21 @@
+#.demo MS is client
+#.data-operator is server 
+
+#.demo MS API...
+POST : http://localhost:8880/dataprovider/2/9
+
+#data_operation_service API....
+GET : http://localhost:9990/getsum/3/6
+
+# from api-gateway
+	Sample Testing URL:
+		GET: http://localhost:8765/get
+	Calling "data_operation_service" api from api-gateway
+	GET :http://localhost:8765/getsum/3/6
+	
+	Calling demo MS api form api-gateway
+	POST:http://localhost:8765/dataprovider/2/9
+		For this fow will got like this , api-gateway <--> dmeo <--> data-operation-service MS
+#.
+
+ 
